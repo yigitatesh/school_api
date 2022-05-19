@@ -1,0 +1,65 @@
+POST https://localhost:7147/api/student
+Content-Type: application/json
+
+{
+  "firstName": "Mehmet Yigit",
+  "lastName": "Ates",
+  "grade": 3,
+  "phoneNumber": "5552223311"
+}
+
+###
+
+POST https://localhost:7147/api/student
+Content-Type: application/json
+
+{
+  "firstName": "Yusuf",
+  "lastName": "Ates",
+  "grade": 4,
+  "phoneNumber": "5552223312"
+}
+
+###
+
+POST https://localhost:7147/api/student
+Content-Type: application/json
+
+{
+  "firstName": "Ahmet",
+  "lastName": "Toprak",
+  "grade": 1
+}
+
+###
+
+GET https://localhost:7147/api/student
+
+###
+
+GET https://localhost:7147/api/student?firstname=yusuf&lastname=ates
+
+###
+
+GET https://localhost:7147/api/student/bygrade?mingrade=3&maxgrade=4
+
+###
+
+GET https://localhost:7147/api/student/1
+
+###
+
+PUT https://localhost:7147/api/student/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "firstName": "Ahmet",
+    "lastName": "Ates",
+    "grade": 2,
+    "phoneNumber": "5552223314"
+}
+
+###
+DELETE https://localhost:7147/api/student/3
+
